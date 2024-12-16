@@ -31,11 +31,18 @@ function loadingloader(){
     t1.from("#page1" ,{
          delay : 0.2,
          y:1600,
-         opacity : 0,
+         duration : 0.6,
          ease:Power4,
     })
     t1.to("#loader",{
         display: "none",
+    })
+    t1.from(".hero h1,#hero3 h2",{
+        y:120,
+        stagger:0.2
+    })
+    t1.from("#nav",{
+        opacity : 0
     })
 }
 loadingloader();
