@@ -28,16 +28,16 @@ function loadingloader(){
         delay : 3.5,
         duration : 0.2,
     })
-    t1.from("#page1" ,{
-         delay : 0.2,
+    t1.from("#page1 , #page2" ,{
+         delay : 0.1,
          y:1600,
-         duration : 0.6,
+         duration : 0.4,
          ease:Power4,
     })
     t1.to("#loader",{
         display: "none",
     })
-    t1.from(".hero h1,#hero3 h2",{
+    t1.from("#hero1 h1,#hero2 h1,#hero3 h2,#hero4 h1",{
         y:120,
         stagger:0.2
     })
