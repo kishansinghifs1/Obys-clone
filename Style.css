@@ -123,12 +123,13 @@ html, body{
     width: 70%;
     margin-left: 28%;
     height: fit-content;
-    overflow: hidden;
+    overflow: yhidden;
     display: flex;
     align-items: center;
     position: relative;
     z-index: 999;
 }
+
 .hero:nth-child(2){
    margin-top: 16vh;
 }
@@ -137,6 +138,16 @@ html, body{
     font-weight: 600;
     text-transform: uppercase;
     line-height: 7.2vw;
+}
+#hero1 h1::before{
+    content: "01";
+    position: absolute;
+    font-size: 3.3vw;
+    font-weight: 300;
+    font-family: "silk serif";
+    left: -23%;
+    top:-17px;
+  
 }
 .hero h2{
     font-size: 7.2vw;
@@ -213,7 +224,18 @@ html, body{
 #page4-content h1{
     font-size: 7vw;
     text-transform: uppercase;
+    position: relative;
 } 
+#page4-content h1::before{
+    content: "03";
+    position: absolute;
+    font-size: 3.3vw;
+    font-weight: 100;
+    font-family: "silk serif";
+    left: -10%;
+    top: 8%;
+  
+}
 #page4-content .underline{
      height: 2px;
      width: 100%;
@@ -241,7 +263,7 @@ html, body{
 #page4-blue-div{
     background-color:#3F7DF4 ;
     width: 30vw;
-    padding: 3vw;
+    padding: 3.3vw;
     position: relative;
     margin-top: -33vh;
     margin-left: 24vw;
@@ -271,7 +293,7 @@ html, body{
 .elem{
     white-space: nowrap;
     overflow-x: hidden;
-    margin-bottom: 1vw; 
+    margin-bottom: -3vw; 
 }
 .elem h1{
     font-size: 7vw;
@@ -297,7 +319,7 @@ html, body{
 .elem2{
     white-space: nowrap;
     overflow-x: hidden;
-    margin-bottom: 1vw;
+    margin-bottom: -3vw;
 }
 .elem2 h1{
     font-size: 7vw;
@@ -324,5 +346,54 @@ html, body{
     font-family: "silk serif";
     color: transparent;
 }
+#footer{
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    background-color: #151515;
+    padding-left: 29vw;
+    padding-right: 2vw;
+}
+#footer h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+}
+#footer h1::before{
+  content: "04";
+  position: absolute;
+  font-size: 3vw;
+  font-weight: 100;
+  font-family: "silk serif";
+  left: 20%;
+  top: 1%;
 
-
+}
+.underline{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin : 2.7vw 0;
+}
+#footer-div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 15vw;
+    padding-top: 4vw;
+}
+#footer-div h6{
+    font-size: 0.9vw;
+    font-weight: 500;
+    /* margin-bottom: 1.5vw; */
+}
+.box{
+    width: 20%;
+}
+#footer-div h5{
+    font-size: 1.4vw;
+    font-weight: 500;
+}
+#footer>h5{
+    font-weight: 500;
+    font-size: 1vw;
+}
