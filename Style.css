@@ -4,7 +4,12 @@
     box-sizing: border-box;
     font-family: "Plain Light";
     color: white;
+    /* background-color: #151515; */
 }
+._canvas_container{
+    z-index: 999999999 !important;
+    pointer-events: none;
+} 
 html, body{
     height: 100%;
     width: 100%;
@@ -107,7 +112,7 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3vw 6vw;
+    padding: 1vw 6vw;
 }
 #nav-part2{
     display: flex;
@@ -204,12 +209,72 @@ html, body{
     font-size: 1.8vw;
 }
 #page3{
-    min-height: 100vh;
-    width : 100%;
+    height: 100vh;
+    width: 100%;
     background-color: #151515;
     position: relative;
+    padding:  2vw;
+    
+}
+#page3 h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    position: relative;
+    margin-left: 28vw;
+}
+#page3 h1::before{
+    content: "02";
+    position: absolute;
+    font-size: 3.3vw;
+    font-weight: 100;
+    font-family: "silk serif";
+    left:-10%;
+    top: 8%;
+}
+#page3 .underline{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin-left: 28vw;
+}
+.page3circle{
+    height: 20vw;
+    width: 20vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+  }
+#image-div-container{
+    background-color: #151515;
+    padding: 1vw;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.image-div{
+ height:33vw;
+ width:24vw;
+ position: relative;
+ overflow: hidden;
+ flex-shrink: 0;
+ margin: 1vw;
+}
+.image-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#extraspace {
+    min-height: 100vh;
+    background-color: #151515;
+    position: relative;
+    width: 100%;
 }
 #page4{
+   min-height: 100vh;
     background-color: #151515;
     position: relative;
     width: 100%;
