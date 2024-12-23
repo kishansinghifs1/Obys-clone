@@ -177,13 +177,8 @@ html, body{
     position: relative;
     left: 28%;
     background-image: url(Showreel-2022-preview-1.jpg);
-}
-#vediocontainer img{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    top: 0;
+    background-size:cover ;
+    background-position: center;
 }
 #vediocontainer video{
     height: 100%;
