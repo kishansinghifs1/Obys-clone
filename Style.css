@@ -21,8 +21,6 @@ html, body{
     border : 2px solid #ffffff7d;
     position: fixed;
     z-index : 999;
-    mix-blend-mode: difference;
-    transform: translate(-50%,-50%);
 }
 #loader{
     height: 100%;
@@ -191,6 +189,7 @@ html, body{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    opacity: 0;
 }
 #vedio-cursor{
     background-color: #FFA63D;
@@ -208,26 +207,6 @@ html, body{
 #vediocontainer i{
     font-size: 1.8vw;
 }
-/* #video-cursor {
-    background-color: #FFA63D;
-    height: 9vw;
-    width: 9vw;
-    border-radius: 50%;
-    position: absolute;
-    top: -15%;
-    left: 70%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    z-index: 999;
-} */
-
 #page3 {
     min-height: 100vh;
     width: 100%;
@@ -595,4 +574,15 @@ html, body{
 #footer>h5{
     font-weight: 500;
     font-size: 1vw;
+}
+
+#flag {
+    height: 25vw;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    left: 0;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
